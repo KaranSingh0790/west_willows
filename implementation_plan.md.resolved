@@ -1,0 +1,63 @@
+# Villa Website Refinement Plan
+
+This plan outlines the steps to upgrade the West Willows website according to your requests, ensuring a premium, luxury experience with the provided assets and new features.
+
+## Proposed Changes
+
+### 1. Asset Management & Hero Section
+- **Move Images**: Move all images from the `assets/` directory to `public/assets/` so Next.js can serve them statically.
+- **Hero Update**: Update `Hero.tsx` to use `/assets/frontView.png` as the main cinematic background.
+
+---
+
+### 2. Combined Features & Experience
+- Replace the existing `Features.tsx` and `Experience.tsx` with a new, unified **`Amenities.tsx`** component.
+- This component will use a luxurious, alternating layout (text on one side, images on the other) highlighting:
+  - **Private Pool** (using `pool.png`)
+  - **Luxury Suites** (using `room1.png` and `room2.png`)
+  - **Kitchen & Bar** (using `bar.png` and `bar2.png`)
+  - **The Grand Hall & Breakfast** (using `hall.png` and `breakfast.png`)
+
+---
+
+### 3. Cinematic Views Gallery
+- Update **`Gallery.tsx`** to be a "Cinematic Views" section.
+- Display a beautifully arranged masonry grid containing all the provided pictures to give a full visual tour of the villa.
+
+---
+
+### 4. About Section
+- Update **`About.tsx`** to elaborate more on the villa's architecture, its luxury, and the breathtaking cinematic views it offers.
+
+---
+
+### 5. Booking & Contact Revamp
+- Update **`Booking.tsx`** to keep the calendar availability check but change the call-to-action.
+- Provide two primary booking options:
+  1. **Book via WhatsApp**
+  2. **Call the Owner** directly
+- Add a new section displaying **Basic Information** (Phone, Email, Address).
+
+---
+
+### 6. Interactive Luxury Map
+- Create a new **`MapSection.tsx`** component.
+- We will install `leaflet` and `react-leaflet` to display an interactive map.
+- The map will use a dark, minimalistic tile layer (like CartoDB Dark Matter) to match the luxury dark/cream aesthetic of the website.
+
+## User Review Required
+
+> [!IMPORTANT]
+> **Map Location & Contact Details:** I will use placeholder contact details (phone, email, address, and map coordinates) for now. You can provide the exact details later or I can add them if you provide them now.
+> **Dependency Addition:** I will install `leaflet` and `react-leaflet` to provide the interactive map experience.
+
+## Open Questions
+
+1. Do you have a specific latitude and longitude or address for the interactive map, or should I use a placeholder location for now?
+2. Are there any specific contact numbers or emails you want me to insert into the booking page immediately?
+
+## Verification Plan
+- Run the local Next.js development server to verify that all images load correctly.
+- Test the new features/experience layout for responsiveness.
+- Verify the interactive map renders properly.
+- Ensure the WhatsApp and Call buttons are functioning correctly.
